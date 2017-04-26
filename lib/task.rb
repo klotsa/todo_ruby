@@ -3,6 +3,7 @@ class Task
 
   define_method(:initialize) do |description|
     @description = description
+    @id = @@all_tasks.length+1
   end
 
   define_method(:description) do
